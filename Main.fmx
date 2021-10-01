@@ -1,0 +1,162 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 404
+  ClientWidth = 532
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 532.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Center
+      StyledSettings = [Family]
+      Size.Width = 143.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claCadetblue
+      Text = 'MyNewApp'
+      TabOrder = 0
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Size.Width = 532.000000000000000000
+    Size.Height = 339.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label2: TLabel
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'A'
+      TabOrder = 0
+    end
+    object EditA: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      Text = '12'
+      Position.X = 10.000000000000000000
+      Position.Y = 27.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label3: TLabel
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 49.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'B'
+      TabOrder = 3
+    end
+    object EditB: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      Text = '34'
+      Position.X = 10.000000000000000000
+      Position.Y = 66.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object ResBtn: TButton
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'ResBtn'
+      OnClick = ResBtnClick
+    end
+    object MyConsole: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.X = 10.000000000000000000
+      Position.Y = 248.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Viewport.Width = 508.000000000000000000
+      Viewport.Height = 45.000000000000000000
+    end
+    object Layout2: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 137.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 104.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object RSum: TRadioButton
+        Align = Top
+        IsChecked = True
+        Size.Width = 512.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '+'
+      end
+      object RMinus: TRadioButton
+        Align = Top
+        Position.Y = 19.000000000000000000
+        Size.Width = 512.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '-'
+      end
+      object RMultiply: TRadioButton
+        Align = Top
+        Position.Y = 38.000000000000000000
+        Size.Width = 512.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '*'
+      end
+      object RDivide: TRadioButton
+        Align = Top
+        Position.Y = 57.000000000000000000
+        Size.Width = 512.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '/'
+      end
+    end
+    object Button1: TButton
+      Align = Bottom
+      Position.X = 10.000000000000000000
+      Position.Y = 307.000000000000000000
+      Size.Width = 512.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Save to ini'
+      OnClick = Button1Click
+    end
+  end
+end
